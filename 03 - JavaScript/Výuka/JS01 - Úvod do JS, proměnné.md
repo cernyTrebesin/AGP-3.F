@@ -174,7 +174,7 @@ modulo udáva zbytek po dělení dvou čísel
 
 `6%3 = 0` (protože 6/3 = 2 a zbytek 0)
 
-`5/3 = 2` (protože 5/3 = 1 a zbytek 2)
+`5%3 = 2` (protože 5/3 = 1 a zbytek 2)
 
 ```JavaScript
 console.Log(a%b)
