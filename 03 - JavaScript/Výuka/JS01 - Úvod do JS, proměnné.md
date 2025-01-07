@@ -83,7 +83,7 @@ let jmeno = "Spytihněv"
 Celé číslo (bez desetinné tečky), psáno bez uvozovek
 
 ```JavaScript
-var hodnota = 420
+let hodnota = 420
 ```
 
 ### float / double
@@ -91,7 +91,7 @@ var hodnota = 420
 Desetinné číslo, psáno bez uvozovek (používáme desetinnou tečku)
 
 ```JavaScript
-var hodnota = 3.14
+let hodnota = 3.14
 ```
 
 ### boolean
@@ -99,5 +99,83 @@ var hodnota = 3.14
 Hodnota true/false
 
 ```JavaScript
-var chillGuy = true
+let chillGuy = true
+```
+
+## Práce s proměnnými
+
+### Práce s textem
+
+Text můžeme spojovat
+
+```JavaScript
+let text1 = "Low"
+let text2 = "Taper"
+let text3 = "Fade"
+
+Console.Log(text1 + text2 + text3)
+```
+
+Výstup kódu bude "LowTaperFade" - všimněte si, že ve výstupu se nenachází mezery. Musíme je tam přidat.
+
+Mezery můžeme přidat pomocí přidáním +
+
+```JavaScript
+Console.Log(text1 + " "+ text2 + " "+ text3)
+```
+
+Nebo pomocí interpolace
+
+```JavaScript
+Console.Log("${text1} ${text2} ${text3}")
+```
+
+Když používáme zápis pomocí interpolace, musíme každou proměnnou zapsat do složených závorek (pravý alt + b/n) a přidat na začátek $ (pravý alt + ů) 
+
+Tento složený text lze i uložit do samostatné proměnné, kterou poté můžeme vypsat
+
+```JavaScript
+let velkyText = text1 + " "+ text2 + " "+ text3
+Console.Log(velkyText)
+```
+
+### Matematické operace
+
+Začněme deklarací 2 celočíselných proměnných
+
+```JavaScript
+let a = 3
+let b = 5
+```
+
+V JavaScriptu můžeme:
+sčítat (+)
+```JavaScript
+console.Log(a+b)
+```
+odečítat (-)
+```JavaScript
+console.Log(a-b)
+```
+
+násobit (*)
+```JavaScript
+console.Log(a*b)
+```
+
+dělit (/)
+```JavaScript
+console.Log(a/b)
+```
+
+modulo (%)
+
+modulo udáva zbytek po dělení dvou čísel
+
+`6%3 = 0` (protože 6/3 = 2 a zbytek 0)
+
+`5/3 = 2` (protože 5/3 = 1 a zbytek 2)
+
+```JavaScript
+console.Log(a%b)
 ```
