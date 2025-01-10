@@ -1,30 +1,39 @@
 # Úvod do JS, práce s proměnnými
+
 ## Co je to JavaScript?
 
-* JavaScript je dynamický programovací jazyk, který přidává interaktivitu a dynamiku na webové stránky.
-* Hlavní role JavaScriptu na webové stránce
-    * Reagovat na akce uživatele (např. kliknutí na tlačítko).
-    * Validovat formuláře nebo zpracovávat data přímo na straně uživatele.
-    * Animovat prvky a měnit obsah stránky bez nutnosti jejího obnovení.
-* Rozdíl oproti HTML a CSS:
-    * HTML definuje strukturu stránky.
-    * CSS určuje její vzhled.
-    * JavaScript zajišťuje interaktivitu a logiku.
-* Význam v moderním webu:
-    * JavaScript pohání většinu interaktivních funkcí, které na webech používáme.
+-   JavaScript je dynamický programovací jazyk, který přidává interaktivitu a dynamiku na webové stránky.
+-   Hlavní role JavaScriptu na webové stránce
+    -   Reagovat na akce uživatele (např. kliknutí na tlačítko).
+    -   Validovat formuláře nebo zpracovávat data přímo na straně uživatele.
+    -   Animovat prvky a měnit obsah stránky bez nutnosti jejího obnovení.
+-   Rozdíl oproti HTML a CSS:
+    -   HTML definuje strukturu stránky.
+    -   CSS určuje její vzhled.
+    -   JavaScript zajišťuje interaktivitu a logiku.
+-   Význam v moderním webu:
+    -   JavaScript pohání většinu interaktivních funkcí, které na webech používáme.
 
 ## Vládání JS do HTML
-* Přímo v HTML
+
+Přímo v HTML:
+
 ```HTML
 <script>
     console.log("Hello world!");
-</script>    
+</script>
 ```
 
-* Externí soubor
+Externí soubor:
+
+HTML
+
 ```HTML
 <script src="script.js"></script>
 ```
+
+JavaScript
+
 ```JavaScript
 console.log("Hello world!");
 ```
@@ -34,6 +43,7 @@ console.log("Hello world!");
 Existují 3 způsoby zápisu proměnných
 
 ### let
+
 Základní proměnná, kterou později lze přespsat
 
 ```JavaScript
@@ -121,21 +131,21 @@ Výstup kódu bude "LowTaperFade" - všimněte si, že ve výstupu se nenacház�
 Mezery můžeme přidat pomocí přidáním +
 
 ```JavaScript
-Console.Log(text1 + " "+ text2 + " "+ text3)
+Console.Log(text1 + " " + text2 + " " + text3)
 ```
 
 Nebo pomocí interpolace
 
 ```JavaScript
-Console.Log("${text1} ${text2} ${text3}")
+Console.Log(`${text1} ${text2} ${text3}`)
 ```
 
-Když používáme zápis pomocí interpolace, musíme každou proměnnou zapsat do složených závorek (pravý alt + b/n) a přidat na začátek $ (pravý alt + ů) 
+Když používáme zápis pomocí interpolace, musíme každou proměnnou zapsat do složených závorek (pravý alt + b/n) a přidat na začátek $ (pravý alt + ů)
 
 Tento složený text lze i uložit do samostatné proměnné, kterou poté můžeme vypsat
 
 ```JavaScript
-let velkyText = text1 + " "+ text2 + " "+ text3
+let velkyText = text1 + " " + text2 + " " + text3
 Console.Log(velkyText)
 ```
 
@@ -149,28 +159,34 @@ let b = 5
 ```
 
 V JavaScriptu můžeme:
+
 sčítat (+)
+
 ```JavaScript
 console.Log(a+b)
 ```
+
 odečítat (-)
+
 ```JavaScript
 console.Log(a-b)
 ```
 
-násobit (*)
+násobit (\*)
+
 ```JavaScript
 console.Log(a*b)
 ```
 
 dělit (/)
+
 ```JavaScript
 console.Log(a/b)
 ```
 
 modulo (%)
 
-modulo udáva zbytek po dělení dvou čísel
+Modulo udáva zbytek po dělení dvou čísel
 
 `6%3 = 0` (protože 6/3 = 2 a zbytek 0)
 
