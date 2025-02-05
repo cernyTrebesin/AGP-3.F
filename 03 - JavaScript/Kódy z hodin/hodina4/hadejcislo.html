@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nahCislo = Math.floor(Math.random()*10);
+        nahCislo *= 1;
+        let hadej;
+        do{
+            hadej = window.prompt("Hádej číslo");
+            hadej *= 1;
+            if(hadej > nahCislo){
+                alert("Hledané číslo je menší než " + hadej)
+            }else if(hadej < nahCislo){
+                alert("Hledáné číslo je větší než " + hadej)
+            }
+        }while(hadej !== nahCislo)
+        alert("Uhádnul jsi číslo");
+    </script>
+</body>
+</html>

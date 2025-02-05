@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="pocitej">Vypočítej</button>
+    <script>
+        let tlacitko = document.querySelector("#pocitej");
+        tlacitko.addEventListener("click", vypocitej);
+        function vypocitej(){
+            let c = window.prompt("Zadej nejdelší stranu");
+            let a = window.prompt("Zadej kratší stranu");
+            let b = window.prompt("Zadej kratší stranu");
+            a *= 1; // a = a * 1 
+            b *= 1;
+            c *= 1;
+
+            if(a + b > c){
+                if(a===b){
+                    if(a===c){
+                        alert("Rovnostranný");
+                    }else{
+                        alert("rovnoramenný");
+                    }
+                }else{
+                    if(a===c){
+                        alert("Rovnoramenný");
+                    }else{
+                        if(c===b){
+                            alert("Rovnoramenný");
+                        }else{
+                            alert("Obecný");
+                        }
+                    }
+                }
+            }else{
+                alert("Trojúhelník nejde sestrojit");
+            }
+        }
+    </script>
+</body>
+</html>
