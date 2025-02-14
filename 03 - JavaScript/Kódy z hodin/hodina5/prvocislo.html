@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let cislo = window.prompt("Zadej číslo");
+        let prvocislo = true;
+        for(let i = 2; i < cislo/2; i++){
+            if(cislo % i === 0){
+                prvocislo = false;
+                break;
+            }
+        }
+
+        if(prvocislo){ // if(prvnocislo === true)
+            alert("Zadané číslo je prvočíslo");
+        }else{
+            alert("Zadané číslo není prvočíslo");
+        }
+
+    </script>
+</body>
+</html>
