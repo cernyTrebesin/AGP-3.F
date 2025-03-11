@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(cislo){
+            let prime = true;
+            for(let j = 2; j < cislo; j++){
+                if(cislo % j === 0){
+                    prime = false;
+                    return prime;
+                }
+            }
+            return prime;
+        }
+
+        let a = window.prompt("Zadej číslo");
+
+        for(let i = 2; i <= a; i++){
+            let prvocislo = isPrime(i);
+            if(prvocislo){
+                alert(i);
+            }
+        }
+    </script>
+</body>
+</html>
